@@ -38,7 +38,7 @@
     "hideCursor": false,
     "separator": "~ ",
     "color": {
-      "keys": "",
+      "keys": "#81A1C1",
       "title": "",
       "output": "",
       "separator": ""
@@ -121,17 +121,18 @@
   "modules": [
     {
       "type": "title",
+      "format": "              {user-name-colored} on {host-name-colored}",
       "key": " ",
       "fqdn": true,
       "color": {
-        "user": "",
+        "user": "green",
         "at": "",
-        "host": ""
+        "host": "blue"
       }
     },
     {
       "type": "custom",
-      "format": "───────────────────────── Hardware ─────────────────────────"
+      "format": "─────────────────────────{##7DCFFF} Hardware {#}─────────────────────────"
     },
     {
     "type": "board",
@@ -191,7 +192,7 @@
     },
     {
       "type": "custom",
-      "format": "───────────────────────── Software ─────────────────────────"
+      "format": "─────────────────────────{##7DCFFF} Software {#}─────────────────────────"
     },
     {
       "type": "os",
@@ -230,7 +231,7 @@
     },
     {
       "type": "custom",
-      "format": "───────────────────────── Overview ─────────────────────────"
+      "format": "─────────────────────────{##7DCFFF} Overview {#}─────────────────────────"
     },
     {
       "type": "uptime",
