@@ -1,0 +1,50 @@
+{
+    "dev.containers.mountWaylandSocket": false,
+    "workbench.iconTheme": "jetbrains-file-icon-theme-dark",
+    "workbench.colorTheme": "JetBrains New UI Dark Theme",
+    "animations.Install-Method": "Custom UI Style",
+    "custom-ui-style.external.imports": [
+        "file:///home/alxww/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    ],
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go",
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform"
+    },
+    "redhat.telemetry.enabled": false,
+    "telemetry.feedback.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "telemetry.editStats.enabled": false,
+    "ansible.lightspeed.enabled": false,
+    "terminal.integrated.initialHint": false,
+    "workbench.activityBar.location": "top",
+    "workbench.browser.showInTitleBar": false,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "files.autoSave": "onFocusChange",
+    "editor.cursorBlinking": "expand",
+    "editor.formatOnType": true,
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "sqltools.highlightQuery": false,
+    "sqltools.format": {
+        "reservedWordCase": "upper"
+    },
+    "update.showReleaseNotes": false,
+    "workbench.editor.enablePreview": false,
+    "git.ignoreRebaseWarning": true,
+    "go.toolsManagement.autoUpdate": true,
+}
