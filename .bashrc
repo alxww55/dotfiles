@@ -30,5 +30,14 @@ unset rc
 # Aliases
 alias la='ls -la'
 
-# Custom prompt
-PS1=$'\[\\033[32m\\]\\033[1m\\u\\033[0m \[\\033[37m\\]on \[\\033[34m\\]\\033[1m\\h\\033[0m\[\\033[37m\\] \[\\033[37m\\]at \[\\033[94m\\]\\w\[\\033[37m\\]\\n\\$ '
+# show git branch
+parse_git_branch() {
+    branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+    if [ -n "$branch" ]; then
+        echo " ($branch)"
+    fi
+}
+
+# custom prompt
+PS1=$'\[\033[32m\]\033[1m\u\033[0m \[\033[37m\]on \[\033[34m\]\033[1m\h\033[0m\[\033[37m\] \[\033[37m\]at \[\033[94m\]\w\[\033[37m\]\[\033[33m\]$(parse_git_branch)\[\033[0m\]
+\$ '
