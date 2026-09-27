@@ -1,0 +1,20 @@
+# Required for nano working in alacritty
+TERM=xterm-256color
+
+alias sudo="sudo"
+alias la="ls -la"
+alias gcm="git commit -am"
+alias glo="git log --oneline --graph"
+alias grf="git reflog"
+
+# show git branch
+parse_git_branch() {
+    branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+    if [ -n "$branch" ]; then
+        echo "  ($branch)"
+    fi
+}
+
+# custom prompt
+PS1=$'󰮤 \[\033[32m\]\033[1m\u\033[0m \[\033[37m\]on \[\033[34m\]\033[1m\h\033[0m\[\033[37m\] \[\033[37m\]at \[\033>
+\$ '
